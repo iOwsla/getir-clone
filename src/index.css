@@ -5,8 +5,21 @@
 @tailwind utilities;
 
 @layer base {
-    html, body {
+
+    html,
+    body {
         font-family: 'Open Sans', sans-serif;
         @apply antialiased;
     }
+}
+
+.flag-select {
+    @apply !pb-0
+}
+.flag-select button {
+    @apply h-14 border-2 border-gray-200 transition-colors hover:border-primary-brand-color bg-white rounded;
+}
+
+.flag-select button > span span:nth-child(2) {
+    @apply text-sm pl-2;
 }
